@@ -9,5 +9,8 @@ router.route('/:id').get( propertyController.getAllProperties);
 router.route('/get-specific/:id').get( propertyController.getPropertyById);
 router.route('/get/:id').get(propertyController.getAllSellerProperties);
 router.route('/get-seller-details/:id').get( propertyController.getBuyerDetails);
+router.route('/:id').put(propertyController.updateProperty)
+router.route('/:id').delete(propertyController.deletePropertyById)
+
 
 module.exports = router;
